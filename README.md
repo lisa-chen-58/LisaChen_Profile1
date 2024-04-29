@@ -8,3 +8,7 @@ This repository contains the project files for a profile page, showcasing backgr
 - CSS
 - Font Awesome icons
 - Google Fonts
+
+### What you should see:
+
+![1714375380305](image/README/1714375380305.png)

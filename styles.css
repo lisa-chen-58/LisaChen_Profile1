@@ -191,8 +191,8 @@ main {
 }
 
 .project {
- width: 27vw;
- height: 35vw;
+ width: 25%;
+ height: 20%;
  border: solid 2px rgb(235, 222, 198);
  contain: content;
  border-radius: 10px;
