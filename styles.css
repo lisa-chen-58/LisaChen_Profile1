@@ -1,0 +1,221 @@
+:root {
+ /* GENERAL */
+ --full-length: 100%;
+ 
+ /* FONTS */
+ --font-title: "Quattrocento", serif;
+ --font-text: "Fanwood Text", serf;
+
+ /* NAVIGATION */
+ --nav-height: 100px;
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ width: var(--full-length);
+}
+
+#nav-background {
+ position: fixed;
+ height: var(--nav-height);
+ object-fit:contain;
+ opacity: 70%;
+ z-index: 0;
+}
+
+#navbar {
+ position: fixed;
+ background-color: rgb(247,250,251);
+ width: var(--full-length);
+ height: var(--nav-height);
+ font-family: var(--font-text);
+ z-index: 1;
+}
+
+#nav-info {
+ height: var(--full-length);
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: end;
+ row-gap: 10px;
+ margin: auto 20px auto 0;
+}
+
+#nav-info a {
+ margin-left: 10px;
+}
+
+#nav-info img {
+ width: 20px;
+ height: 20px;
+}
+
+#nav-info img:hover {
+ transform: scale(2)
+}
+
+#nav-info:not(first-child) {
+ z-index: 1;
+}
+
+#nav-sections a {
+ text-decoration: none;
+ color: rgb(139, 118, 47);
+ font-weight: bold;
+}
+
+#nav-sections a:hover {
+ font-size: 150%;
+}
+
+/* MAIN SECTION */
+
+main {
+ position: absolute;
+ width: 100%;
+ padding: 4%;
+ margin-top: var(--nav-height);
+  background: linear-gradient(to bottom right, #E5E4E2, #F2F3F3 25%, #F4F8F9 40%, #F2F3F3, #E5E4E2); 
+ z-index: -1;
+}
+
+/* COLLAPSIBLE */
+
+.collapsible > input[type="checkbox"] {
+  position: absolute;
+  left: -100vw;
+}
+
+.collapsible .content {
+  overflow-y: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.collapsible > input[type="checkbox"]:checked ~ .content {
+  height: auto;
+  overflow: visible;
+}
+
+.collapsible label {
+  display: block;
+}
+
+.collapsible {
+  margin-bottom: 1em;
+}
+
+.collapsible > input[type="checkbox"]:checked ~ .content {
+  padding: 15px;
+  border: 1px solid #e8e8e8;
+  border-top: 0;
+}
+
+.collapsible label {
+  cursor: pointer;
+  font-weight: normal;
+  padding: 15px;
+  background: #e8e8e8;
+}
+
+.collapsible label:hover,
+.collapsible label:focus {
+  background: #d8d8d8;
+}
+
+.collapsible .handle label:before {
+  font-family: 'fontawesome';
+  content: "\f054";
+  display: inline-block;
+  margin-right: 10px;
+  font-size: .58em;
+  line-height: 1.556em;
+  vertical-align: middle;
+}
+
+.collapsible > input[type="checkbox"]:checked ~ .handle label:before {
+  content: "\f078";
+}
+
+/* TEXT INFO */
+
+.first-letter {
+ font-size: 130%;
+ color: rgb(203, 62, 11);
+ font-style: italic;
+ margin-right: -4px;
+}
+
+.heading-title {
+ text-align: center;
+}
+
+.heading-title, .heading-section {
+ margin-top: 3%;
+ font-family: var(--font-title);
+ color: rgb(247, 178, 108);
+}
+
+.heading-section {
+ padding-left: 15px;
+ padding: 5px 0px 5px 2px;
+ margin: 5px 0;
+}
+
+.text-general {
+ margin-top: 5px;
+ font-family: var(--font-text);
+ border-left: solid 2px orangered;
+ padding: 5px 0px 5px 15px; 
+ text-align: justify;
+ line-height: 25px;
+}
+
+.emphasis {
+ font-weight: bold;
+}
+
+/* PROJECTS */
+
+.project-group {
+ margin: 15px 0;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.project {
+ width: 27vw;
+ height: 35vw;
+ border: solid 2px rgb(235, 222, 198);
+ contain: content;
+ border-radius: 10px;
+ background:linear-gradient(
+  45deg, 
+  #D9CBC0 0%,
+  #F2F3F3 25%,
+  #E5E4E2 50%,
+  #F2F3F4 75%,
+  #D9CBC0 100%
+  )
+ }
+
+.project-image {
+ height: 70%;
+ width: var(--full-length);
+ border-radius: inherit;
+}
+
+.project-text {
+ height: 50%;
+ font-family: 'Red Hat Display', sans-serif;
+ text-align: center;
+ font-size: 70%;
+ padding: 5px;
+}
