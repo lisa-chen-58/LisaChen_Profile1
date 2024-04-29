@@ -46,6 +46,7 @@ body {
 
 #navbar {
   position: fixed;
+  top:0;
   background-color: var(--nav-background-color); 
   width: var(--full-length);
   height: var(--nav-height);
@@ -164,6 +165,10 @@ body {
 
 /* TEXT INFO */
 
+#welcome-section {
+  margin-top: 15vh;
+}
+
 .first-letter {
   font-size: 130%;
   color: #cb3e0b;
@@ -203,7 +208,7 @@ body {
 /* PROJECTS */
 
 .project-group {
-  margin: 15px 0;
+  margin: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -211,8 +216,8 @@ body {
 
 
 .project {
-  width: 25%;
-  height: 20%;
+  width: 25vw;
+  height: 45vh;
   border: solid var(--border-width) var(--border-color);
   contain: content;
   border-radius: 10px;
@@ -227,13 +232,13 @@ body {
 }
 
 .project-image {
-  height: 70%;
+  height: 0.7;
   width: var(--full-length);
   border-radius: inherit;
 }
 
 .project-text {
-  height: 50%;
+  height: 0.3;
   font-family: 'Red Hat Display', sans-serif;
   text-align: center;
   font-size: 70%;
