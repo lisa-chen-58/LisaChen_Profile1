@@ -22,6 +22,7 @@ To view this project locally, follow these steps:
 ## Utilizations
 
 <<<<<<< HEAD
+
 - HTML
 - CSS
 - Font Awesome icons
@@ -29,8 +30,6 @@ To view this project locally, follow these steps:
 
 ### What you should see:
 
-![1714375380305](image/README/1714375380305.png)
-=======
 This code comprises Lisa Chen's profile page, featuring sections on her diverse career path, motivations, and software engineering projects. It includes HTML and CSS files, as well as Font Awesome icons and Google Fonts for styling.
 
 ## Project Structure
@@ -40,4 +39,5 @@ This code comprises Lisa Chen's profile page, featuring sections on her diverse 
 - img: This is where the images used in the project are stored.
 
 Feel free to click through and explore Lisa Chen's journey and projects!
->>>>>>> 4ee2431697538ca82a02cfe554aff5dafa4fe6f3
+
+![1716786773524](image/README/1716786773524.png)

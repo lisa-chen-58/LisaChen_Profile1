@@ -218,6 +218,7 @@ body {
 .project {
   width: 25vw;
   height: 45vh;
+  max-height: 400px;
   border: solid var(--border-width) var(--border-color);
   contain: content;
   border-radius: 10px;
@@ -229,18 +230,29 @@ body {
     var(--gradient-mid1) 75%,
     var(--gradient-start) 100%
   );
+  display: flex;
+  flex-direction: column;
+  overflow:hidden;
 }
 
 .project-image {
-  height: 0.7;
+  flex: 0 50vh;
+  max-height: 200px;
   width: var(--full-length);
   border-radius: inherit;
+  object-fit: cover;
+  object-position: top;
 }
 
 .project-text {
-  height: 0.3;
+  flex: 0 50vh;
   font-family: 'Red Hat Display', sans-serif;
   text-align: center;
-  font-size: 70%;
+  font-size: 10px;
   padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: auto;
 }
